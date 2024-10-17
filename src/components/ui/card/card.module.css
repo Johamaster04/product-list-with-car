@@ -1,0 +1,131 @@
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 90%;
+   position: static;
+}
+
+@media (max-width: 960px) {
+  .container{
+    display: block;    
+  }
+}
+
+.card {
+    width: 25%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    position: relative;
+}
+
+@media (max-width: 960px) {
+  .card{
+    width: 100%;
+  }
+}
+
+.card .img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    border-radius: 15px;
+}
+
+.card .img2{
+  width: 95%;
+    height: auto;
+  border: 2px solid hsl(14, 86%, 42%);
+  border-radius: 15px;
+}
+
+
+.card p {
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 16px;
+    color: hsl(14, 86%, 42%);
+    margin: 5px;
+    text-align: left;
+}
+
+.card .price {
+    font-size: 18px;
+    color: #e74c3c;
+    margin: 10px 5px;
+    text-align: left;
+}
+
+.card .button {
+    background-color: #fff;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.icon{
+  margin: 0 5px;
+}
+
+.button2 {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    top: -20px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;    
+    width: 60%;
+    justify-content: space-between;
+  }  
+
+  .icon1{
+    margin: 0 18px 0 0;
+    font-size: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 50px;
+  }
+
+  .icon2{
+    margin: 0 0 0 18px;
+    font-size: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 50px;
+  }
+
+  .containerButton{
+    position: relative;
+  }
+
+  .containerDescription{
+    margin-top: 30px;
+  }
