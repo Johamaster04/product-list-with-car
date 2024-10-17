@@ -21,7 +21,7 @@ interface CartItem extends Product {
   quantity: number;
 }
 
-export const products = [
+const products = [
   {
     image: {
       thumbnail: "/image-waffle-thumbnail.jpg",
