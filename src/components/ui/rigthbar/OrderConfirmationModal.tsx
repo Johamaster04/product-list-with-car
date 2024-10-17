@@ -3,6 +3,7 @@ import React from "react";
 import Modal from "react-modal";
 import styles from "./OrderConfirmationModal.module.css";
 import Confirm from "../../../../public/icon-order-confirmed.svg"
+import Image from "next/image";
 
 interface CartItem {
   name: string;
@@ -46,11 +47,13 @@ const OrderConfirmationModal: React.FC<OrderConfirmationModalProps> = ({
         {/*  */}
         <div className={styles.itemList}>
           {cartItems.map((item, index) => (
-            <div className={styles.item}>
+            <div className={styles.item} key={index}>
               
-              <img
+              <Image
                 src={item.image.thumbnail}
                 alt={item.name}
+                width={1000}
+                height={760}
                 className={styles.itemImage}
               />
             
